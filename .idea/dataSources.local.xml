@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - notes_to_myself@localhost" uuid="ebbaa389-cdec-4dfc-8a3d-cf77171e6063">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>notes_to_myself.*</schema-pattern>
+      <default-schemas>notes_to_myself.*</default-schemas>
+    </data-source>
+  </component>
+</project>
