@@ -10,7 +10,7 @@ class Form extends CI_Controller {
         //Once library is loaded, the image library object will be available using: $this->image_lib
         $this->load->library('image_lib');
 
-        // this line hasn't been tested
+        // Validates email
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email|is_unique[users.email]');
         $this->form_validation->set_rules('password', 'Password', 'required',
             array('required' => 'You must provide a %s.')
@@ -27,7 +27,7 @@ class Form extends CI_Controller {
         // Get the user's entered captcha value from the form
         $userCaptcha = $this->input->post('captcha');
 
-        /* Get the actual captcha value that we stored in the session (see below) */
+        // Get the actual captcha value that we stored in the session (see below)
         $word = $this->session->userdata('captchaWord');
 
         if ($this->form_validation->run() == FALSE)

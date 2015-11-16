@@ -10,7 +10,7 @@
         <div class="container">
         <h1>Note-to-myself Log in</h1>
         <?php echo validation_errors(); ?>
-        <?php echo form_open('verifylogin', array('role' => 'form')); ?>
+        <?php echo form_open('verifyLogin', array('role' => 'form')); ?>
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" size="20" id="email" name="email"/>
